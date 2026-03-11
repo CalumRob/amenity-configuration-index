@@ -158,7 +158,9 @@ TCI <- function(buildings_data, RCA = F, years = c("All"), for_aci = F, rolling 
       # print(head(TCI))
       if (cor(TCI, ubiquity, use = "pairwise.complete.obs", 
               method = "spearman") > 0){ 
-        TCI <- TCI * (-1)}
+        TCI <- TCI * (-1)
+        TCI_unsc <- TCI_unsc * (-1)
+      }
       
       df = as.data.frame(TCI)
       
