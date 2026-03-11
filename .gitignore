@@ -1,6 +1,0 @@
-*.csv
-.env
-*.geojson
-*.pmtiles
-
-*.Rhistory
