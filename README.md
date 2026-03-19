@@ -6,7 +6,6 @@ This repository contains the tools and data treatment used to compute the **Area
 
 - **[ACI_computation/](file:///e:/ACI_app/ACI_Paris/ACI_computation)**: A modular pipeline designed to be applied to any city.
 - **[Replicate_Paris/](file:///e:/ACI_app/ACI_Paris/Replicate_Paris)**: Scripts and data used to replicate the specific results and figures for Paris presented in our paper.
-- **[aci_functions.R](file:///e:/ACI_app/ACI_Paris/aci_functions.R)**: Core R functions for ACI and TCI calculations.
 
 ## Requirements
 
