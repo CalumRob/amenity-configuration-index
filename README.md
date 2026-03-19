@@ -12,9 +12,7 @@ This repository contains the tools and data treatment used to compute the **Area
 
 ### Software
 - **R**: Required versions of libraries: `data.table`, `sf`, `dplyr`, `r5r`, and `rJava`.
-- **Java JDK**: A compatible Java JDK (**>= 21.0.0**) is required for routing calculations via `r5r`.
-- **r5r**: This project relies on the Rapid Realistic Routing on Real-world Networks (`r5r`) package. For more details, see the [r5r documentation](https://ipeagit.github.io/r5r/).
-
+- **Java JDK**: A compatible Java JDK (**>= 21.0.0**) is required for routing calculations via `r5r`. See the [r5r documentation](https://ipeagit.github.io/r5r/) for more details.
 
 
 ---
