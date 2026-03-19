@@ -1,6 +1,6 @@
 # Amenity Configuration Index (ACI)
 
-This repository contains the tools and data treatment used to compute the **Area Configuration Index (ACI)** and **Type Configuration Index (TCI)** as described in Robertson, et al. (2026) ([SSRN: 5864410](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5864410)) and presented on [aciparis.calumrobertson.fr](https://aciparis.calumrobertson.fr).
+This repository contains the tools and data treatment used to compute the **Area Configuration Index (ACI)** and **Type Configuration Index (TCI)** as described in Robertson, et al. (2026) ([SSRN: 5864410](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5864410)) and presented via an interactive dashboard at [aciparis.calumrobertson.fr](https://aciparis.calumrobertson.fr).
 
 The pipeline measures urban complexity based on walking distances from residential buildings to various amenity types.
 
