@@ -1,6 +1,6 @@
 # Amenity Configuration Index (ACI)
 
-This repository contains the tools and data treatment used to compute the **Area Configuration Index (ACI)** and **Type Configuration Index (TCI)** as described in Robertson, et al. (2026) ([SSRN: 5864410](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5864410)).
+This repository contains the tools and data treatment used to compute the **Area Configuration Index (ACI)** and **Type Configuration Index (TCI)** as described in Robertson, et al. (2026) ([SSRN: 5864410](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5864410)) and presented on [aciparis.calumrobertson.fr](https://aciparis.calumrobertson.fr).
 
 The pipeline measures urban complexity based on walking distances from residential buildings to various amenity types.
 
@@ -17,12 +17,11 @@ The pipeline measures urban complexity based on walking distances from residenti
 - **Java JDK**: A compatible Java JDK (**>= 21.0.0**) is required for routing calculations via `r5r`.
 - **r5r**: This project relies on the Rapid Realistic Routing on Real-world Networks (`r5r`) package. For more details, see the [r5r documentation](https://ipeagit.github.io/r5r/).
 
-### Environment
-- **.env**: (Optional) For configuring root paths or database connections if required by legacy scripts in `utils.R`.
+
 
 ---
 
-## 🚀 Replicate Paper Results
+## Replicate Paper Results
 
 The `Replicate_Paris` directory is designed for those wishing to reproduce the findings in our paper. It requires only the software listed above and the data provided within the folder.
 
@@ -33,14 +32,14 @@ The `Replicate_Paris` directory is designed for those wishing to reproduce the f
 
 ---
 
-## 🏙️ Compute ACI for Any City
+## Compute ACI for Any City
 
 The `ACI_computation` directory provides a modular framework for applying the ACI to new urban contexts.
 
 ### Inputs Required
 
-1.  **Origins Set**: A dataset of origin points (e.g., building points, centroids, or grid points) as a CSV or `sf` object with columns `id`, `lon`, and `lat`.
-2.  **Amenities Set**: A dataset of amenities containing coordinates (`lon`, `lat`), a `year`, and a `type` classification.
+1.  **Origins Set**: A dataset of origin points (e.g., building points, centroids, or grid points) with columns `id`, `lon`, and `lat` or an sfpoints object with column `id`.
+2.  **Amenities Set**: A dataset of amenities containing coordinates (`lon`, `lat`), a `year`, and a `type` classification or an sfpoints object with columns `id`, `year`, and `type`.
 3.  **Street Network**: An OpenStreetMap extract in `.pbf` format for the target area.
 
 ### Usage
