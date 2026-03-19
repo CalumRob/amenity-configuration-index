@@ -2,8 +2,6 @@
 
 This repository contains the tools and data treatment used to compute the **Area Configuration Index (ACI)** and **Type Configuration Index (TCI)** as described in Robertson, et al. (2026) ([SSRN: 5864410](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5864410)) and presented via an interactive dashboard at [aciparis.calumrobertson.fr](https://aciparis.calumrobertson.fr).
 
-The pipeline measures urban complexity based on walking distances from residential buildings to various amenity types.
-
 ## Project Structure
 
 - **[ACI_computation/](file:///e:/ACI_app/ACI_Paris/ACI_computation)**: A modular pipeline designed to be applied to any city.
@@ -49,5 +47,5 @@ The `ACI_computation` directory provides a modular framework for applying the AC
 3.  The pipeline will:
     - **Route**: Compute travel times between origins and amenities.
     - **Aggregate**: Count reachable amenities per type within a time threshold (default 15 mins).
-    - **Compute**: Calculate TCI (amenity complexity) and ACI (area configuration) scores.
+    - **Compute**: Calculate TCI (amenity type configuration index) and ACI (amenity configuration index of places) scores.
 
