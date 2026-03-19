@@ -2,6 +2,7 @@ library(data.table)
 library(arrow)
 library(fs)
 
+setwd(dir = dirname(rstudioapi::getActiveDocumentContext()$path))
 # Source the functions
 source("ACI computation/2_treating.R")
 source("ACI computation/3_configuration_indices.R")
